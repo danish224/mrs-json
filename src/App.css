@@ -1,0 +1,94 @@
+/* Center the entire content */
+.center-container {
+  display: flex;
+  flex-direction: column; /* Stack form and table vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 100vh; /* Full viewport height */
+  gap: 2rem; /* Space between form and table */
+  background-color: #f9f9f9; /* Optional background color */
+  padding: 1rem;
+}
+h1{
+  font-size: 2em;
+}
+.form {
+  display: flex;
+  gap: 1rem; /* Space between form inputs */
+  align-items: center;
+}
+
+.form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 0.5rem 1rem;
+  background-color: #04AA6D;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 500px; /* Optional: Limit table width */
+}
+
+.customers td, .customers th {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.customers th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem; /* Space between buttons */
+}
+
+.delete-btn, .edit-btn {
+  padding: 0.5rem; /* Equal padding */
+  border-radius: 50%; /* Round shape */
+  display: flex; /* Centers icon */
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Equal width */
+  height: 40px; /* Equal height */
+  margin-left: 0.5rem; /* Add space between buttons */
+}
+
+.delete-btn {
+  color: #fff;
+  background-color: #2ecc71;
+}
+
+.edit-btn {
+  color: #fff;
+  background-color: #2ecc71;
+}
+@media (max-width:768px){
+  h1{
+    font-size: 1.5em;
+  }
+  .form{
+    flex-direction: column;
+    align-items: center;
+  }
+  .form input{
+    width: 100%;
+  }
+  .customers{
+    width: 300px;
+  }
+}
